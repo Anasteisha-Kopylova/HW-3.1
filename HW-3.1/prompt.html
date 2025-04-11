@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Info</title>
+</head>
+<body>
+    <script>
+        const a = prompt('What is a day of your birth?');
+        const b = prompt('What is month of your birth?');
+        const c = prompt('What is year of your birth?');
+        
+        const randomOrder = [a, b, c].sort(() => Math.random() - 0.5).join(' | ');
+        
+        alert(`Random order: ${randomOrder}`);
+    </script>
+</body>
+</html>
